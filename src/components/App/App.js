@@ -2,18 +2,19 @@ import React from "react";
 import "./App.css";
 import NavBar from "../Navbar/NavBar";
 import About from "../About/About";
+import TimeLine from "../TimeLine/TimeLine";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import homeLogo from '../../bg.svg';
-
+import homeLogo from '../../images/bg.svg';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="App bg-gradient min-h-screen bg-no-repeat">
         <NavBar />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
+          <Route path="/timeline" component={TimeLine} />
         </Switch>
       </div>
     </Router>

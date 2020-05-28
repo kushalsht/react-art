@@ -14343,6 +14343,10 @@ video {
   transition-delay: 1000ms;
 }
 
+.bg-gradient {
+  background-image: linear-gradient(to top, #d1ddeb 0%, #ffffff 100%);
+}
+
 @media (min-width: 640px) {
   .sm\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
